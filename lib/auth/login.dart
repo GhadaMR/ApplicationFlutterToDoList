@@ -29,12 +29,20 @@ class _LoginState extends State<Login> {
           : Container(
         padding: EdgeInsets.all(20),
         child: ListView(children: [
+          Container(height: 100),
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 20.0),
+            child: Image.asset(
+              'assets/images/DO5.JPG', // Chemin de votre image dans le dossier assets
+              height: 50, // Ajustez la hauteur selon vos besoins
+            ),
+          ),
           Form(
             key: formState,
             child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Container(height: 130),
+                  Container(height: 30),
                   Center(child: Text("Login", style: TextStyle(fontSize:50, fontWeight:  FontWeight.bold),)),
                   Container(height: 20),
                   Text("email", style: TextStyle(fontSize: 20, fontWeight:  FontWeight.bold)),

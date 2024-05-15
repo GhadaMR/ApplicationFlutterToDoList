@@ -54,6 +54,14 @@ class _SignUpState extends State<SignUp> {
           :Container(
         padding: EdgeInsets.all(20),
         child: ListView(children: [
+          Container(height: 100),
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 20.0),
+            child: Image.asset(
+              'assets/images/DO5.JPG', // Chemin de votre image dans le dossier assets
+              height: 50, // Ajustez la hauteur selon vos besoins
+            ),
+          ),
           Form(
             child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
